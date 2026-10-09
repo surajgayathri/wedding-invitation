@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suraj &amp; Gayathri  | Wedding Invitation</title>
+<meta name="description" content="You are warmly invited to the wedding of Suraj &amp; Gayathri — 25th October 2026">
+<meta property="og:title" content="Suraj &amp; Gayathri | Wedding Invitation">
+<meta property="og:description" content="Join us in celebrating their beautiful journey — 25th October 2026">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/couple.jpg">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<div id="fx" aria-hidden="true"></div>
+
+<!-- Opening screen -->
+<div id="cover" role="dialog" aria-label="Wedding invitation opening">
+  <div class="cover-inner">
+    <div class="flourish">❀ ❁ ❀</div>
+    <p class="eyebrow">YOU ARE CORDIALLY INVITED</p>
+    <p class="tag">A celebration of love, family, and forever</p>
+    <h1 class="names-lg"><span class="sp">Suraj S</span><em>&amp;</em><span class="sp">Gayathri G</span></h1>
+    <p class="tag">Together with their families, invite you to celebrate their wedding.</p>
+    <button id="openBtn" class="btn solid">Open Wedding Invitation</button>
+  </div>
+</div>
+
+<button id="music" class="music" aria-label="Play wedding music" aria-pressed="false" hidden>
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/></svg>
+</button>
+<audio id="bgm" loop preload="none"><source src="assets/wedding-music.mp3" type="audio/mpeg"></audio>
+
+<main id="main" aria-hidden="true">
+
+  <!-- Blessing + couple -->
+  <section class="sec hero">
+    <div class="wrap rv">
+      <div class="om-wrap" aria-hidden="true"><span class="ring r1"></span><span class="ring r2"></span><span class="om">ॐ</span></div>
+      <p class="sub">Shree Ganeshaaya Namaha</p>
+      <p class="sub">With the blessings of our families</p>
+      <div class="orn">❀ ❁ ❀</div>
+      <h2 class="names"><span class="sp">Suraj S<i class="spark s1">✦</i><i class="spark s2">✧</i></span><em>&amp;</em><span class="sp">Gayathri G<i class="spark s3">✦</i><i class="spark s4">✧</i></span></h2>
+      <figure class="frame">
+        <img src="assets/couple.jpg" alt="Gayathri and Sooraj smiling together, dressed in traditional Kerala attire" width="1066" height="1600" decoding="async" onerror="this.parentElement.classList.add('noimg')">
+      </figure>
+      <p class="quote">Together is a beautiful place to be</p>
+    </div>
+  </section>
+
+  <!-- Invitation wording -->
+  <section class="sec soft">
+    <div class="wrap rv"><div class="box">
+      <h3 class="cap">Dear Friends,</h3>
+      <div class="orn">❀</div>
+      <p class="bigname">Suraj S</p>
+      <p class="sub">is getting married to.</p>
+      <p class="bigname">Gayathri G</p>
+      <div class="orn">❁</div>
+      <p class="body">We cordially invite your esteemed presence with family to bless this auspicious occasion.</p>
+    </div></div>
+  </section>
+
+  <!-- Details -->
+  <section class="sec">
+    <div class="wrap">
+      <article class="card rv">
+        <div class="ico">🪔</div>
+        <h3 class="cap">Wedding Ceremony</h3>
+        <p class="lbl">Wedding Day</p>
+        <p class="big">Sunday, 25 October 2026</p>
+        <p class="sub">1102 Thulam 08</p>
+        <p class="lbl">Auspicious Time — Muhurtham</p>
+        <p class="big">11:05 AM – 11:40 AM</p>
+        <p class="sub">Daytime ceremony</p>
+        <p class="lbl">Venue</p>
+        <p class="big">Anaswara Auditorium</p>
+        <p class="body">Sasthamcotta, Kerala</p>
+        <a class="btn" href="https://maps.app.goo.gl/wCEfsnuqg868VWu66" target="_blank" rel="noopener">Get Directions</a>
+      </article>
+      <article class="card rv">
+        <div class="ico">🌸</div>
+        <h3 class="cap">Reception</h3>
+        <p class="big">Sunday, 25 October 2026</p>
+        <p class="lbl">Time</p>
+        <p class="big">From 5:00 PM onwards</p>
+        <p class="body">Reception will begin at 5:00 PM on the wedding day, at the groom's residence.</p>
+        <a class="btn" href="https://maps.app.goo.gl/64F98mWMDLtVqtVW6" target="_blank" rel="noopener">Reception Directions</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Countdown + calendar -->
+  <section class="sec soft">
+    <div class="wrap rv"><div class="box">
+      <p class="quote light">Counting down to their forever</p>
+      <div class="cd" id="cd" role="timer" aria-live="off">
+        <div><b id="d">--</b><span>Days</span></div>
+        <div><b id="h">--</b><span>Hours</span></div>
+        <div><b id="m">--</b><span>Minutes</span></div>
+        <div><b id="s">--</b><span>Seconds</span></div>
+      </div>
+      <p id="cdDone" class="done" hidden>Today is the day — we are celebrating Suraj &amp; Gayathri!</p>
+
+      <h3 class="cap" style="margin-top:56px">October 2026</h3>
+      <table class="cal" aria-label="October 2026 calendar">
+        <thead><tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr></thead>
+        <tbody>
+          <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr>
+          <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+          <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+          <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+          <tr><td class="hl" aria-label="25 October, Wedding Day">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
+        </tbody>
+      </table>
+      <p class="wd">♥ Sunday 25 · Wedding Day ♥</p>
+    </div></div>
+  </section>
+
+  <!-- Closing -->
+  <footer class="sec closing">
+    <div class="wrap rv">
+      <div class="orn">❀ ❁ ❀</div>
+      <p class="quote">Your presence will make our day truly special.</p>
+      <p class="body">We look forward to celebrating this beautiful beginning with you and your family.</p>
+      <p class="sub" style="margin-top:28px">With love,</p>
+      <p class="bigname sm"> Suraj &amp; Gayathri</p>
+    </div>
+  </footer>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
